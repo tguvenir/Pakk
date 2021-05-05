@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General Settings */
+
+:root {
+	--primary-color: #624de3;
+	--dark-color: #100a30;
+	--light-color: #fff;
+	--rates-color1: #dbdae0;
+	--rates-color2: #19c787;
+	--rates-color3: #fcb934;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	color: var(--dark-color);
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1232px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Header Section */
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1232px;
+	margin: 0 auto;
+	padding: 33px 15px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding-left: 0;
+}
+
+.nav .nav__item {
+	margin-left: 4.4rem;
+}
+
+.nav .nav__item:first-child {
+	margin-left: 0;
+}
+
+.nav .nav__item:last-child {
+	margin-left: 2.7rem;
+}
+
+.nav__item .nav__link {
+	color: var(--dark-color);
+}
+
+.nav .nav__item .nav__btn {
+	font-size: 1.4rem;
+	background-color: var(--primary-color);
+	color: var(--light-color);
+	padding: 1.6rem 2.6rem;
+	border-radius: .6rem;
+}
+
+/* Hero Section */
+
+#hero {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	text-align: center;
+	padding-top: 62px;
+	padding-bottom: 757px;
+	position: relative;
+}
+
+.hero__title {
+	font-size: 5.5rem;
+	max-width: 563px;
+	margin: 0 auto 3.1rem;
+}
+
+.btn__class {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5.5rem;
+}
+
+.btn__class .btn {
+	display: inline-block;
+	border: 1px solid var(--light-color);
+	background-color: transparent;
+	font-size: 1.6rem;
+	padding: 1.7rem 3.7rem;
+	color: var(--light-color);
+	border-radius: .6rem;
+	margin: 0 .8rem;
+}
+
+.btn__class .btn__primary {
+	font-size: 1.5rem;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	padding: 1.6rem 3.7rem;
+}
+
+.hero__image {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	bottom: -172px;
+	margin: 0 auto;
+}
+
+/* Rate Section */
+
+#rate {
+	padding-top: 150px;
+}
+
+.container .rate__title {
+	font-size: 4.8rem;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 650px;
+}
+
+.rates {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.rates .rates__item {
+	flex: 0 0 32%;
+}
+
+.rates .rates__item .rates__footer {
+	border-radius: 0 0 .8rem .8rem;
+	padding: 2.4rem 3rem;
+}
+
+.rates .rates__item-1 .rates__footer {
+	background-color: var(--rates-color1);
+}
+
+.rates .rates__item-2 .rates__footer {
+	background-color: var(--rates-color2);
+}
+
+.rates .rates__item-3 .rates__footer {
+	background-color: var(--rates-color3);
+}
+
+.rates .rates__item .rates__header {
+	background-image: url(./images/tarif-01.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 center;
+	padding-top: 10rem;
+	border-radius: .8rem .8rem 0 0;
+}
+
+.rates .rates__item .rates__header .rates__info {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	padding: 4rem 3rem 3.5rem;
+}
+
+.rates .rates__item .rates__header .rates__info::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4.5rem;
+	background-image: url(./images/item.svg);
+	position: absolute;
+	top: -4.5rem;
+	left: 0;
+}
+
+.rates .rates__item .rates__header .rates__info .rates__info-title {
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+.rates .rates__item .rates__header .rates__info .rates__info-title::before {
+	content: '';
+	display: block;
+	background-image: url(./images/logo-min.svg);
+	width: 6.1rem;
+	height: 1.6rem;
+	margin-bottom: 1.3rem;
+}
+
+.rates .rates__item .rates__header .rates__info .rates__info-price {
+	font-size: 4.8rem;
+	margin: 0;
+}
+
+.rates .rates__item .rates__header .rates__info .rates__info-price span {
+	font-size: 1.5rem;
+}
+
+.rates .rates__item .rates__footer .rates__list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.rates .rates__item .rates__footer .rates__list-item {
+	position: relative;
+	padding-left: 3rem;
+	margin-bottom: 1.4rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.rates .rates__item .rates__footer .rates__list-item::before {
+	display: block;
+	content: '';
+	width: 2rem;
+	height: 2rem;
+	background-image: url(./images/check-01.svg);
+	position: absolute;
+	top: calc(50% - 1rem);
+	left: 0;
+}
